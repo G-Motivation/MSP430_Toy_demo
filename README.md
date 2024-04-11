@@ -13,3 +13,8 @@
 //    10K     |                                 P1.0|-->LED
 //     |      |                                     |
 //    GND
+
+
+|  Function                 | REF Link  |
+|  -----------------------  | --------  |
+| Solar_LED_MPPT_Charger    | https://github.com/circuitvalley/Solar_LED_MPPT_Charger |
