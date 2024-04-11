@@ -19,7 +19,7 @@
 /**
  * hello.c
  */
-#define GPIO// LED
+#define GPIO//GPIO , LED, FIFO
 
 int main(void)
 {
@@ -39,6 +39,22 @@ int main(void)
 #endif
 
 #ifdef GPIO
+    sysSetup();
+                                                // Lock CS registers
+
+        printf("GPIO!\n");
+
+        while (1)
+        {
+            P1OUT ^= BIT0; // Toggle LED
+            __delay_cycles(100000);
+        }
+
+        return 0;
+#endif
+
+
+#ifdef FIFO
     sysSetup();
                                                 // Lock CS registers
 
