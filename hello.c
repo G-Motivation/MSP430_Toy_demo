@@ -2,7 +2,6 @@
 #include <msp430.h>
 #include <sysSetup.h>
 
-
 //  Vin= 1V-3V -----------------
 //     |      |                 |
 //    10K     |                 |
@@ -20,19 +19,38 @@
 /**
  * hello.c
  */
+#define GPIO// LED
+
 int main(void)
 {
-
+#ifdef LED
     sysSetup();
-                                            // Lock CS registers
+                                                // Lock CS registers
 
-    printf("Hello World!\n");
+        printf("LED\n");
 
-    while (1)
-    {
-        P1OUT ^= BIT0; // Toggle LED
-        __delay_cycles(100000);
-    }
+        while (1)
+        {
+            P1OUT ^= BIT0; // Toggle LED
+            __delay_cycles(100000);
+        }
 
-    return 0;
+        return 0;
+#endif
+
+#ifdef GPIO
+    sysSetup();
+                                                // Lock CS registers
+
+        printf("GPIO!\n");
+
+        while (1)
+        {
+            P1OUT ^= BIT0; // Toggle LED
+            __delay_cycles(100000);
+        }
+
+        return 0;
+#endif
+
 }
