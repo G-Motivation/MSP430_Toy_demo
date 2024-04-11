@@ -21,6 +21,9 @@
  */
 #define GPIO//GPIO , LED, FIFO
 
+/*
+* LPM0 等於  close MCLK
+*/
 int main(void)
 {
 #ifdef LED
