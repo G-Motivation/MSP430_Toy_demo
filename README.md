@@ -18,3 +18,6 @@
 |  Function                 | REF Link  |
 |  -----------------------  | --------  |
 | Solar_LED_MPPT_Charger    | https://github.com/circuitvalley/Solar_LED_MPPT_Charger |
+
+
+REF: https://dev.ti.com/tirex/explore/node?node=A__AMwsQ36ncmEHzBjPlhXZZg__msp430ware__IOGqZri__LATEST
