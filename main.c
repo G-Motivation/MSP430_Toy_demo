@@ -8,12 +8,13 @@
 //    10K     |                 |
 //     |      |                 |
 //     |      |                 |
-//     -------| A2=2/3Vin       |
+//     -------| A2=2/3Vin   P5.1|-> SPI Data Out (UCB1SOMI)
 //     |      |                 |
-//     10K    |                 |
-//     |      |                 |
-//     -------| A3=1/3Vin       |
-//     |      |                 |
+//     10K    |             P5.0|<- SPI Data In (UCB1SIMO)
+//     |      |             P5.2|-> SPI Serial Clock Out (UCB1CLK)
+//     |      |             P5.3|<- SPI Slave Select (UCB1STE)
+//     -------| A3=1/3Vin   P2.5|--> UART UCA1TXD
+//     |      |             P2.6|--> UART UCA1RXD
 //    10K     |             P1.0|-->LED
 //     |      |                 |
 //    GND
@@ -61,7 +62,8 @@ int main(void)
 
     while (1)
     {
-        printf("GPIO!\n");
+//        printf("GPIO!\n");
+        printk("SGPIO\n");
 
         P1OUT ^= BIT0; // Toggle LED
         __delay_cycles(100000);
