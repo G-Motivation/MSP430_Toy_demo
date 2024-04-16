@@ -1,5 +1,23 @@
 # MSP430FR5994
 
+```c
+//  --------------------------------------------------------------------------
+//  UART Communication Protocol (only applicable for standalone mode)
+//  --------------------------------------------------------------------------
+//  [COMMAND] <data> <data> <data> <data>
+//
+//  COMMANDS:                                     RESPONSES:
+//  RTC_READ_TIME =      00h                      00h XXh XXh XXh XXh
+//  RTC_WRITE_TIME =     01h XXh XXh XXh XXh
+//  RTC_READ_THR_HIGH =  02h                      02h XXh XXh XXh XXh
+//  RTC_READ_THR_LOW =   03h                      03h XXh XXh XXh XXh
+//  ADC_READ_THR_HIGH =  04h                      04h XXh XXh
+//  ADC_READ_THR_LOW =   05h                      05h XXh XXh
+//  ADC_WRITE_THR_HIGH = 06h XXh XXh
+//  ADC_WRITE_THR_LOW =  07h XXh XXh
+//
+```
+
 
 |  Function                   | REF Link  |
 |  ---------------------------| --------  |
