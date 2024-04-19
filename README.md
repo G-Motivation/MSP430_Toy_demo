@@ -28,4 +28,5 @@
 | FloripaSat 2                | https://github.com/orgs/floripasat/repositories?q=eps|
 | UWCubesat                   | https://github.com/orgs/floripasat/repositories?q=eps|
 | Oresat                      | https://github.com/oresat/oresat-batteries , https://github.com/oresat/oresat-battery-testing|
+| MAX7219 8x8 LED | 
 
