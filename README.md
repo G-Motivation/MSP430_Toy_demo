@@ -28,5 +28,14 @@
 | FloripaSat 2                | https://github.com/orgs/floripasat/repositories?q=eps|
 | UWCubesat                   | https://github.com/orgs/floripasat/repositories?q=eps|
 | Oresat                      | https://github.com/oresat/oresat-batteries , https://github.com/oresat/oresat-battery-testing|
-| MAX7219 8x8 LED | 
+| MAX7219 8x8 LED(SPI) |  |
+| SD Card(SPI) | |
+| TCA9548A I2C Multiplexer 8 | |
+|SPI Trip document | https://medium.com/weiting-tw/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98-spi%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A%E6%93%8D%E4%BD%9C-a9c6f4b8462a|
+| build linux kernel by yocto| https://www.linkedin.com/pulse/yocto-embedded-linux-building-your-own-first-image-raspberry-haddad/|
+|Intro to Embedded Linux Part 5 - How to Enable I2C in the Yocto Project| https://www.digikey.com/en/maker/projects/intro-to-embedded-linux-part-5-how-to-enable-i2c-in-the-yocto-project/6843bbf9a83c4c96888fccada1e7aedf|
+|Yocto Tutorial  | https://www.youtube.com/watch?v=VFRrbMVboyE&list=PLwqS94HTEwpQmgL1UsSwNk_2tQdzq3eVJ&index=50|
+| msp430_max7219 Project|https://github.com/evilbetty/msp430_max7219_ledmatrix|
+| adc1115| https://www.taiwaniot.com.tw/product/ads1115-%E8%B6%85%E5%B0%8F%E5%9E%8B16%E4%BD%8D%E7%B2%BE%E5%AF%86%E6%A8%A1%E6%95%B8%E8%BD%89%E6%8F%9B%E5%99%A8adc-%E9%96%8B%E7%99%BC%E6%9D%BF%E6%A8%A1%E7%B5%84/|
+| embe project | https://bugworkshop.blogspot.com/2018/11/diy-esp32esp32-ov7670-al422b.html|
 
