@@ -3,7 +3,8 @@
 | topic | URL|
 |  ---------------------------| --------  |
 | opkg | https://blog.csdn.net/qq_41453285/article/details/102523263|
-| 2C Driver (Part 1) - ʹ�� Device Tree ���� Driver | https://ithelp.ithome.com.tw/articles/10244211|
+| 2C Driver (Part 1) - 使用 Device Tree 來找 Driver | https://ithelp.ithome.com.tw/articles/10244211|
+| 在 i.MX 8QuadXPlus 上使用 Yocto 建置 Linux 系統 2 |https://e61983.github.io/2021-09-02-yocto-with-imx8qxp-2/|
 
 ```c
 /dts-v1/;
