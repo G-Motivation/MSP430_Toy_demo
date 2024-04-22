@@ -1,6 +1,24 @@
 # MSP430FR5994
 
+
 ```c
+
+//  Vin= 1V-3V -----------------
+//     |      |                 |
+//    10K     |                 |
+//     |      |                 |
+//     |      |                 |
+//     -------| A2=2/3Vin   P5.1|-> SPI Data Out (UCB1SOMI)
+//     |      |                 |
+//     10K    |             P5.0|<- SPI Data In (UCB1SIMO)
+//     |      |             P5.2|-> SPI Serial Clock Out (UCB1CLK)
+//     |      |             P5.3|<- SPI Slave Select (UCB1STE)
+//     -------| A3=1/3Vin   P2.5|--> UART UCA1TXD
+//     |      |             P2.6|--> UART UCA1RXD
+//    10K     |             P1.0|-->LED
+//     |      |                 |
+//    GND
+
 //  --------------------------------------------------------------------------
 //  UART Communication Protocol (only applicable for standalone mode)
 //  --------------------------------------------------------------------------
@@ -38,4 +56,5 @@
 | msp430_max7219 Project|https://github.com/evilbetty/msp430_max7219_ledmatrix|
 | adc1115| https://www.taiwaniot.com.tw/product/ads1115-%E8%B6%85%E5%B0%8F%E5%9E%8B16%E4%BD%8D%E7%B2%BE%E5%AF%86%E6%A8%A1%E6%95%B8%E8%BD%89%E6%8F%9B%E5%99%A8adc-%E9%96%8B%E7%99%BC%E6%9D%BF%E6%A8%A1%E7%B5%84/|
 | embe project | https://bugworkshop.blogspot.com/2018/11/diy-esp32esp32-ov7670-al422b.html|
-
+| MSP430 WatchDog api | https://blog.csdn.net/k331922164/article/details/108135881|
+| MSP430FR5994 SPI | https://blog.csdn.net/wo4fisher/article/details/124586449|
