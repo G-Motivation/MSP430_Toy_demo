@@ -1,0 +1,1 @@
+正确使用和保存deconfig的流程： 1. 要修改在arch/arm/configs下的文件xxx_defconfig 2. make ARCH=arm64 xxx_defconfig 会生成.config文件 3. make ARCH=arm64 menuconfig 修改配置后保存 4. make ARCH=arm64 savedefconfig 生成defconfg文件 5. cp defconfig arch/arm/configs/xxx_defconfig 保存 这样保存的defconfig文件，配置最小化，且日后能恢复成.config。
